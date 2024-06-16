@@ -1,0 +1,6 @@
+{
+    "defaultCommandTimeout" : 10000 ,
+    "fixturesFolder" : "cypress/fixtures/nopcommerce" ,
+    "specPattern" : "cypress/e2e/nopcommerce" ,
+    "supportFile" : "cypress/support/nopcommerce/e2e.js" 
+}

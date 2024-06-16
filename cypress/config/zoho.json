@@ -1,0 +1,8 @@
+
+{
+    "defaultCommandTimeout" : 10000 ,
+    "baseUrl" : "https://people.zoho.com/",
+    "fixturesFolder" : "cypress/fixtures/zoho" ,
+    "specPattern" : "cypress/e2e/zoho" ,
+    "supportFile" : "cypress/support/zoho/e2e.js" 
+}
