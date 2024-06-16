@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:demo_skill": "cypress open --env configFile=demo_skill",
+    "cy:zoho": "cypress open --env configFile=zoho",
+    "cy:nopcommerce": "cypress open --env configFile=nopcommerce"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,13 @@
+{
+    "defaultCommandTimeout" : 10000 ,
+    "baseUrl" : "https://demoapp.skillrary.com",
+    "fixturesFolder" : "cypress/fixtures/demo" ,
+    "specPattern" : "cypress/e2e/demo" ,
+    "supportFile" : "cypress/support/demo/e2e.js" ,
+    "env" : {
+        "admin_username" : "admin",
+        "admin_password" : "admin",
+        "user_username" : "user",
+        "user_password" : "user"
+    }
+}
