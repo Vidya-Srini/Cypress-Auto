@@ -15,3 +15,8 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run cy:demo_skill
