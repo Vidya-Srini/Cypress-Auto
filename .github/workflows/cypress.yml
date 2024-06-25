@@ -20,4 +20,4 @@ jobs:
       - name: Run Cypress Test
         uses: cypress-io/github-action@v4
         with:
-          command: npm run cy:demo_skill
+          command: npm run cy:cy:open
