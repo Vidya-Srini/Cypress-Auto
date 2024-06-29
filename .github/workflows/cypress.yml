@@ -1,26 +1,21 @@
-name: Cypress Tests
-
+name: example-basic
 on:
   push:
     branches:
-      - main
+      - 'main'
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
-    env:
-      ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
+
+  basic-ubuntu-20:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: npm install
-      - name: Run Cypress Test
-        uses: cypress-io/github-action@v4
+      - name: Cypress tests
+        uses: ./
         with:
-          command: npm install cypress --save-dev --force
-      - name: Run Cypress Test
-        uses: cypress-io/github-action@v4
-        with:
+          working-directory: /Cypress-Auto
           command: npx run cy:demo_skill
