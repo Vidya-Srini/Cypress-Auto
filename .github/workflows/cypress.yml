@@ -1,21 +1,20 @@
-name: example-basic
+name: Cypress Tests
+
 on:
   push:
     branches:
-      - 'main'
-  pull_request:
-  workflow_dispatch:
+      - main
 
 jobs:
-
-  basic-ubuntu-20:
-    runs-on: ubuntu-20.04
+  cypress-run:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Cypress tests
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Cypress Test
         uses: cypress-io/github-action@v4
         with:
-          working-directory: /Cypress-Auto
           command: npx run cy:demo_skill
